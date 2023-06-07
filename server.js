@@ -14,3 +14,8 @@ const pool = new Pool({
 const postsRouter = require('./routes/posts');
 app.use('/posts', postsRouter);
 
+const port = 3000;
+app.listen(port, () => {
+	console.log(`Server running on port ${port}`);
+});
+// listening for incoming requests on port 3000
