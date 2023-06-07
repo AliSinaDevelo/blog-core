@@ -12,3 +12,5 @@ router.post('/', (req, res) => {
 	// create a new blog post
 });
 
+module.exports = router; // export the router
+
