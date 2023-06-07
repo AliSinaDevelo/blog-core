@@ -11,5 +11,6 @@ const pool = new Pool({
 	port: 5432, // Postgres server always runs on this port
 });
 
-
+const postsRouter = require('./routes/posts');
+app.use('/posts', postsRouter);
 
